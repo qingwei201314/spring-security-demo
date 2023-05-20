@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/kevin
+    username: root
+    password: 123456
+  mvc:
+    static-path-pattern: /static/**
+
+logging:
+    level:
+      root: info
+      org:
+        springframework:
+          security: trace
+      com:
+        kevin:
+          mapper: trace
